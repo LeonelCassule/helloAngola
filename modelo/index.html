@@ -19,8 +19,120 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Mais um site feito por Angolano</h1>
+    
     <!-- JavaScript Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!--NAVBAR-->
+<nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+    <div class="container py-3">
+        <a href="#" class="navbar-brand">
+            <img src="img/imovi-icon.png" alt="hello Angola">
+            <span>Hello Angola</span>
+        </a>
+        <button 
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbar-items"
+        aria-controls="navbar-items"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+       <i class="bi bi-list"></i> 
+       </button> 
+       <div class="collapse navbar-collapse" id="navbar-items">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">History</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Project</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+        </ul>
+       </div> 
+
+    </div>
+</nav>
+
+<!--SLIDER-->
+<div class="container" id="slider-container">
+    <div class="carousel slider" id="slider" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button
+        type="button"
+        class="active"
+        data-bs-target="#slider"
+        data-bs-slide-to="0"
+        aria-current="true"
+        aria-label="slide 1"
+        ></button>
+        <button
+        type="button"
+        class="active"
+        data-bs-target="#slider"
+        data-bs-slide-to="1"
+        aria-label="slide 2"
+        ></button>
+        <button
+        type="button"
+        class="active"
+        data-bs-target="#slider"
+        data-bs-slide-to="2"
+        aria-label="slide 3"
+        ></button>
+    </div>
+    <div class="carousel-inner">
+       <div class="carousel-item active">
+        <img src="img/banner-1.jpg" alt="casa 1" class="d-block w-100">
+            <div class="carousel-caption">
+            <h5>Casas Planejadas</h5>
+            <a href="#" class="btn btn-dark">Ver Projectos</a>
+        </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/banner-2.jpg" alt="casa 2" class="d-block w-100">
+                <div class="carousel-caption">
+                <h5>Projecto Inovadores</h5>
+                <a href="#" class="btn btn-dark">Ver Projectos</a>
+            </div>
+        </div>    
+            <div class="carousel-item">
+                <img src="img/banner-3.jpg" alt="casa 3" class="d-block w-100">
+                    <div class="carousel-caption">
+                    <h5>Projectos Complexos</h5>
+                    <a href="#" class="btn btn-dark">Ver Projectos</a>
+                </div>
+            </div>    
+       </div> 
+    <button class="carousel-control-prev"
+       type="button"
+       data-bs-target="#slider"
+       data-bs-slide="prev">
+       <i class="bi bi-chevron-compact-left"></i>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next"
+       type="button"
+       data-bs-target="#slider"
+       data-bs-slide="next">
+       <i class="bi bi-chevron-compact-right"></i>
+      <span class="visually-hidden">Next/span>
+    </button>
+        
+</div>
+
+<!--MINI BANNER-->
+    </div>   
+</div>
 </body>
 </html>
